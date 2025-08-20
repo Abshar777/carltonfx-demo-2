@@ -2320,6 +2320,14 @@ pre.prettyprint .atv:where(.uc-dark) {
 :where(.uc-dark) .uc-navbar-container.uc-navbar-sticky {
   background-color: transparent;
 }
+
+*::-webkit-scrollbar{  display: none ; }
+*::-webkit-scrollbar-track{  display: none ; }
+*::-webkit-scrollbar-thumb{  display: none ; }
+*::-webkit-scrollbar-thumb:hover{  display: none ; }
+*::-webkit-scrollbar-thumb:active{  display: none ; }
+*::-webkit-scrollbar-thumb:focus{  display: none ; }
+
 .uc-navbar-sticky .hide-on-sticky {
   display: none;
 }
