@@ -1487,7 +1487,7 @@ html.bp-xl .xl\:btn-xl {
 }
 .uc-navbar-container:not(.uc-navbar-transparent):where(.uc-dark),
 :where(.uc-dark) .uc-navbar-container:not(.uc-navbar-transparent) {
-  background-color: var(--color-gray-900);
+  background-color: transparent;
 }
 .uc-navbar .uc-navbar-item {
   font-family: inherit !important;
