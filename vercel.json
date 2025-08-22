@@ -1,8 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "redirects": [
-    { "source": "/:path*.html", "destination": "/:path*", "permanent": true }
-  ]
-}
+    "rewrites": [
+      { "source": "/about", "destination": "/about.html" },
+      { "source": "/account-types", "destination": "/account-types.html" },
+      { "source": "/cfd-trading", "destination": "/cfd-trading.html" },
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/forex", "destination": "/forex.html" },
+      { "source": "/metals", "destination": "/metals.html" },
+      { "source": "/stock-indices", "destination": "/stock-indices.html" }
+    ],
+    "redirects": [
+      { "source": "/:path*.html", "destination": "/:path*", "permanent": true }
+    ]
+  }
+  
