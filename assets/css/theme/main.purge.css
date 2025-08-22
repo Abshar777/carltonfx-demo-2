@@ -1435,10 +1435,20 @@ html.bp-xl .xl\:btn-xl {
   opacity: 0.75;
   color: var(--color-gray-900) !important;
 }
+.uc-navbar-nav > li > p[aria-expanded="true"] {
+  opacity: 0.75;
+  color: var(--color-gray-900) !important;
+}
 .uc-navbar-nav > li:hover > a:where(.uc-dark),
 .uc-navbar-nav > li > a[aria-expanded="true"]:where(.uc-dark),
 :where(.uc-dark) .uc-navbar-nav > li:hover > a,
 :where(.uc-dark) .uc-navbar-nav > li > a[aria-expanded="true"] {
+  color: #fff !important;
+}
+.uc-navbar-nav > li:hover > p:where(.uc-dark),
+.uc-navbar-nav > li > p[aria-expanded="true"]:where(.uc-dark),
+:where(.uc-dark) .uc-navbar-nav > li:hover > p,
+:where(.uc-dark) .uc-navbar-nav > li > p[aria-expanded="true"] {
   color: #fff !important;
 }
 .uc-navbar-dropdown {
@@ -1494,6 +1504,12 @@ html.bp-xl .xl\:btn-xl {
 }
 .uc-navbar-item,
 .uc-navbar-nav > li > a {
+  font-family: inherit !important;
+  padding: 0;
+  min-height: var(--uc-nav-height, 48px) !important;
+}
+.uc-navbar-item,
+.uc-navbar-nav > li > p {
   font-family: inherit !important;
   padding: 0;
   min-height: var(--uc-nav-height, 48px) !important;
@@ -2615,9 +2631,9 @@ header.uc-header.header-fourteen
   width: 100%;
   transition-duration: 0.5s;
 }
-.uc-navbar-nav > li > a[aria-expanded="true"] {
+/* .uc-navbar-nav > li > a[aria-expanded="true"] {
   box-shadow: inset 0 3px var(--color-primary);
-}
+} */
 .uc-switcher-nav > li > a {
   border-radius: 12px;
 }
