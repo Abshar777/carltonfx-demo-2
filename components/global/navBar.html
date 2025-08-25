@@ -1,0 +1,368 @@
+<header
+class="uc-header header-eight uc-navbar-sticky-wrap z-999 uc-dark"
+data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
+>
+<nav
+  class="uc-navbar-container uc-navbar-float ft-tertiary z-1"
+  data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
+>
+  <div class="uc-navbar-main" style="--uc-nav-height: 80px">
+    <div class="container">
+      <div
+        class="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white px-1 lg:px-2 bg-white dark:bg-tertiary-600 bg-opacity-90 rounded-2 mt-2 shadow-xs"
+        data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;"
+      >
+        <div class="uc-navbar-left">
+          <div class="uc-logo ltr:ms-1 rtl:me-1">
+            <a class="panel text-none" href="/" style="width: 140px">
+              <img
+                class="dark:d-none"
+                src="./assets/images/logo/logo.png"
+                alt="Lexend"
+              />
+              <img
+                class="d-none dark:d-block"
+                src="./assets/images/logo/logo.png"
+                alt="Lexend"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="uc-navbar-center">
+          <ul
+            class="uc-navbar-nav fs-5 fw-bold gap-3 lg:gap-4 d-none lg:d-flex"
+          >
+            <li>
+              <a class="text-primary" href="./">Home </a>
+            </li>
+            <li>
+              <a href="./about.html">About Us </a>
+            </li>
+            <li>
+              <a href="./account-types.html">Account Types </a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <p style="cursor: pointer" onclick="return false;">
+                Market <span data-uc-navbar-parent-icon></span>
+              </p>
+              <div
+                class="uc-dropbar uc-dropbar-top ft-primary text-unset fs-6 fw-normal hide-scrollbar p-0 rounded-2 overflow-hidden border border-dark dark:border-tertiary bg-white dark:bg-tertiary-700 dark:bg-gradient-45 from-tertiary to-transparent dark:text-white"
+                data-uc-drop=" offset: 8; boundary: !.uc-navbar; stretch: x; animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;"
+              >
+                <div class="uc-dropbar-content">
+                  <div class="container container-full">
+                    <div class="uc-dropbar-inner p-2">
+                      <div class="row col-match justify-between">
+                        <div class="col-8">
+                          <div class="panel vstack gap-4 p-4">
+                            <!-- <div class="vstack gap-narrow flex-none">
+                            <h5 class="h5 xl:h4 m-0">
+                          Market 
+                            </h5>
+                            <p class="fs-7 opacity-60">
+                             this is the market
+                            </p>
+                          </div> -->
+                            <div
+                              class="row child-cols-4 gx-4 col-match justify-between"
+                            >
+                              <div>
+                                <ul
+                                  class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2"
+                                >
+                                  <li>
+                                    <a
+                                      class="hstack items-start gap-2"
+                                      href="./stock-indices.html"
+                                    >
+                                      <div
+                                        class="cstack min-w-32px h-32px rounded bg-primary border border-dark"
+                                      >
+                                        <i
+                                          style="
+                                            transform: translateY(
+                                              -0.3rem
+                                            );
+                                          "
+                                          class="icon-1 ri-info-i text-tertiary-700"
+                                        ></i>
+                                      </div>
+                                      <span
+                                        class="vstack gap-narrow mt-nnarrow"
+                                      >
+                                        <b
+                                          class="fw-bold dark:text-white"
+                                        >
+                                          Stock & Indices</b
+                                        >
+                                        <span class="fs-7"
+                                          >Stock and Indices are the most
+                                          popular instruments in the
+                                          market.</span
+                                        >
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div>
+                                <ul
+                                  class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2"
+                                >
+                                  <li>
+                                    <a
+                                      class="hstack items-start gap-2"
+                                      href="./metals.html"
+                                    >
+                                      <div
+                                        class="cstack min-w-32px h-32px rounded bg-primary border border-dark"
+                                      >
+                                        <i
+                                          style="
+                                            transform: translateY(
+                                              -0.3rem
+                                            );
+                                          "
+                                          class="icon-1 ri-exchange-dollar-line text-tertiary-700"
+                                        ></i>
+                                      </div>
+                                      <span
+                                        class="vstack gap-narrow mt-nnarrow"
+                                      >
+                                        <b
+                                          class="fw-bold dark:text-white"
+                                        >
+                                          Commodities</b
+                                        >
+                                        <span class="fs-7"
+                                          >Commodities are the most
+                                          popular instruments in the
+                                          market.</span
+                                        >
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div>
+                                <ul
+                                  class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2"
+                                >
+                                  <li>
+                                    <a
+                                      class="hstack items-start gap-2"
+                                      href="./forex.html"
+                                    >
+                                      <div
+                                        class="cstack min-w-32px h-32px rounded bg-primary border border-dark"
+                                      >
+                                        <i
+                                          style="
+                                            transform: translateY(
+                                              -0.3rem
+                                            );
+                                          "
+                                          class="icon-1 ri-bar-chart-grouped-fill text-tertiary-700"
+                                        ></i>
+                                      </div>
+                                      <span
+                                        class="vstack gap-narrow mt-nnarrow"
+                                      >
+                                        <b
+                                          class="fw-bold dark:text-white"
+                                        >
+                                          Forex</b
+                                        >
+                                        <span class="fs-7"
+                                          >Forex market is the most
+                                          popular market in the
+                                          world.</span
+                                        >
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="">
+                                <ul
+                                  class="uc-nav mt-5 uc-navbar-dropdown-nav vstack flex-auto gap-2"
+                                >
+                                  <li>
+                                    <a
+                                      class="hstack items-start gap-2"
+                                      href="./cfd-trading.html"
+                                    >
+                                      <div
+                                        class="cstack min-w-32px h-32px rounded bg-primary border border-dark"
+                                      >
+                                        <i
+                                          style="
+                                            transform: translateY(
+                                              -0.3rem
+                                            );
+                                          "
+                                          class="icon-1 ri-chat-voice-ai-line text-tertiary-700"
+                                        ></i>
+                                      </div>
+                                      <span
+                                        class="vstack gap-narrow mt-nnarrow"
+                                      >
+                                        <b
+                                          class="fw-bold dark:text-white"
+                                        >
+                                          CFD Trading</b
+                                        >
+                                        <span class="fs-7"
+                                          >CFD trading allows traders to
+                                          speculate on the price movements
+                                          of an underlying asset without
+                                          actually owning it.</span
+                                        >
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div
+                            class="panel vstack gap-4 p-4 bg-primary dark:bg-tertiary-600 dark:bg-gradient-45 from-tertiary to-transparent border border-dark dark:border-white dark:border-opacity-15 rounded-default"
+                          >
+                            <div class="panel category-section">
+                              <div
+                                style="gap: 1rem"
+                                class="d-flex w-100 justify-content-center align-items-center"
+                              >
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-whatsapp-line text-tertiary-700"
+                                  ></i>
+                                </div>
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-facebook-fill text-tertiary-700"
+                                  ></i>
+                                </div>
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-twitter-x-line text-tertiary-700"
+                                  ></i>
+                                </div>
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-instagram-line text-tertiary-700"
+                                  ></i>
+                                </div>
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-linkedin-fill text-tertiary-700"
+                                  ></i>
+                                </div>
+
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-mail-ai-fill text-tertiary-700"
+                                  ></i>
+                                </div>
+                                <div
+                                  style="border-radius: 50%"
+                                  class="cstack min-w-32px h-32px bg-primary"
+                                >
+                                  <i
+                                    class="ri-phone-fill text-tertiary-700"
+                                  ></i>
+                                </div>
+                              </div>
+                              <ul
+                                class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12"
+                              >
+                                <li class="mt-1">
+                                  <a href="https://goo.gl/maps/1234567890"
+                                    >Physical Address: #1404, 14th Floor,
+                                    Zone A, Aspect Tower, Executive
+                                    Tower-D, Business Bay, Dubai, UAE</a
+                                  >
+                                </li>
+                                <li
+                                  class="d-flex align-items-center gap-1"
+                                >
+                                  <a href="tel:+97148322845"
+                                    >+971 4 832 2845</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="mailto:support@carltonfx.com"
+                                    >support@carltonfx.com</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="panel category-section">
+                              <h5 class="h6">Terms and privacy</h5>
+                              <ul
+                                class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12"
+                              >
+                                <li>
+                                  <a href="/terms-and-conditions.html"
+                                    >Terms of service</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="/privacy-policy.html"
+                                    >Privacy Policy</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="uc-navbar-right">
+          <a
+            class="btn btn-md dark:text-white border border-dark dark:border-white dark:border-opacity-15 dark:bg-gradient-45 from-tertiary to-transparent fs-5 lg:px-3 d-none lg:d-inline-flex rounded-pill"
+            href="page-contact-2.html"
+            >Open Account</a
+          >
+          <a
+            class="btn btn-md btn-tertiary w-48px h-48px d-inline-flex lg:d-none"
+            href="#uc-menu-panel"
+            data-uc-toggle
+          >
+            <i class="icon icon-2 unicon-menu"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
