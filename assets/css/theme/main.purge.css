@@ -1836,7 +1836,7 @@ body.tt-transition .tt-ptr-overlay-top {
 	width: 50%;
 	height: 100vh;
 	height: 100svh;
-	background-color: var(--color-tertiary);
+	background-color: #1f1f1f !important;
 	z-index: 1;
 }
 body.tt-transition .tt-ptr-overlay-bottom {
@@ -1847,7 +1847,7 @@ body.tt-transition .tt-ptr-overlay-bottom {
 	width: 50%;
 	height: 100vh;
 	height: 100svh;
-	background-color: var(--color-tertiary);
+	background-color: #1f1f1f !important;
 	z-index: 1;
 }
 
@@ -2329,7 +2329,7 @@ pre.prettyprint .atv:where(.uc-dark) {
   transform: translateY(0);
 }
 .uc-navbar-container.uc-navbar-sticky {
-  backdrop-filter: blur(8px);
+  /* backdrop-filter: blur(8px); */
   background-color: hsla(0, 0%, 100%, 0.8);
 }
 .uc-navbar-container.uc-navbar-sticky:where(.uc-dark),
@@ -4538,8 +4538,8 @@ progress {
   }
 }
 .btn:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
+  color: #000000 !important;
+  background-color: #00ec4b !important;
   border-color: var(--bs-btn-hover-border-color);
 }
 .btn:focus-visible {

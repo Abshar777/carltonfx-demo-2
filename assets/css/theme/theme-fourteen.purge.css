@@ -1,214 +1,248 @@
 /*!
  * Theme fourteen
  */
-@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM+Plex+Sans+Arabic:wght@400;700&amp;display=swap);
-:root {
-  --font-family-primary: Lexend, IBM Plex Sans Arabic, sans-serif;
-  --font-family-secondary: Sunsive, IBM Plex Sans Arabic, serif;
-  --font-family-tertiary: Lexend, IBM Plex Sans Arabic, serif;
-  --font-family-serif: serif, IBM Plex Sans Arabic, -apple-system,
-    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji;
-  --radius: 4px;
-  --border-radius: 4px;
-  --color-primary: #39851d;
-  --bs-primary-rgb: 57, 133, 29;
-  --color-primary-: #39851d;
-  --bs-primary--rgb: 57, 133, 29;
-  --color-primary-10: rgb(249.72, 249.45, 254.22);
-  --bs-primary-10-rgb: 250, 249, 254;
-  --color-primary-25: rgb(246.2, 245.75, 253.7);
-  --bs-primary-25-rgb: 246, 246, 254;
-  --color-primary-50: rgb(237.4, 236.5, 252.4);
-  --bs-primary-50-rgb: 237, 237, 252;
-  --color-primary-100: rgb(219.8, 218, 249.8);
-  --bs-primary-100-rgb: 220, 218, 250;
-  --color-primary-200: rgb(184.6, 181, 244.6);
-  --bs-primary-200-rgb: 185, 181, 245;
-  --color-primary-300: rgb(149.4, 144, 239.4);
-  --bs-primary-300-rgb: 149, 144, 239;
-  --color-primary-400: rgb(114.2, 107, 234.2);
-  --bs-primary-400-rgb: 114, 107, 234;
-  --color-primary-500: #39851d;
-  --bs-primary-500-rgb: 57, 133, 29;
-  --color-primary-600: rgb(63.2, 56, 183.2);
-  --bs-primary-600-rgb: 63, 56, 183;
-  --color-primary-700: rgb(47.4, 42, 137.4);
-  --bs-primary-700-rgb: 47, 42, 137;
-  --color-primary-800: rgb(31.6, 28, 91.6);
-  --bs-primary-800-rgb: 32, 28, 92;
-  --color-primary-900: rgb(15.8, 14, 45.8);
-  --bs-primary-900-rgb: 16, 14, 46;
-  --color-primary-950: rgb(7.9, 7, 22.9);
-  --bs-primary-950-rgb: 8, 7, 23;
-  --color-secondary: #e2ffab;
-  --bs-secondary-rgb: 226, 255, 171;
-  --color-secondary-: #e2ffab;
-  --bs-secondary--rgb: 226, 255, 171;
-  --color-secondary-10: rgb(254.13, 255, 252.48);
-  --bs-secondary-10-rgb: 254, 255, 252;
-  --color-secondary-25: rgb(253.55, 255, 250.8);
-  --bs-secondary-25-rgb: 254, 255, 251;
-  --color-secondary-50: rgb(252.1, 255, 246.6);
-  --bs-secondary-50-rgb: 252, 255, 247;
-  --color-secondary-100: rgb(249.2, 255, 238.2);
-  --bs-secondary-100-rgb: 249, 255, 238;
-  --color-secondary-200: rgb(243.4, 255, 221.4);
-  --bs-secondary-200-rgb: 243, 255, 221;
-  --color-secondary-300: rgb(237.6, 255, 204.6);
-  --bs-secondary-300-rgb: 238, 255, 205;
-  --color-secondary-400: rgb(231.8, 255, 187.8);
-  --bs-secondary-400-rgb: 232, 255, 188;
-  --color-secondary-500: #e2ffab;
-  --bs-secondary-500-rgb: 226, 255, 171;
-  --color-secondary-600: rgb(180.8, 204, 136.8);
-  --bs-secondary-600-rgb: 181, 204, 137;
-  --color-secondary-700: rgb(135.6, 153, 102.6);
-  --bs-secondary-700-rgb: 136, 153, 103;
-  --color-secondary-800: rgb(90.4, 102, 68.4);
-  --bs-secondary-800-rgb: 90, 102, 68;
-  --color-secondary-900: rgb(45.2, 51, 34.2);
-  --bs-secondary-900-rgb: 45, 51, 34;
-  --color-secondary-950: rgb(22.6, 25.5, 17.1);
-  --bs-secondary-950-rgb: 23, 25, 17;
-  --color-tertiary: #f0f0f6;
-  --bs-tertiary-rgb: 237.6, 255, 204.6;
-  --color-tertiary-: #f0f0f6;
-  --bs-tertiary--rgb: 237.6, 255, 204.6;
-  --color-tertiary-10: rgb(254.55, 254.55, 254.73);
-  --bs-tertiary-10-rgb: 255, 255, 255;
-  --color-tertiary-25: rgb(254.25, 254.25, 254.55);
-  --bs-tertiary-25-rgb: 254, 254, 255;
-  --color-tertiary-50: rgb(253.5, 253.5, 254.1);
-  --bs-tertiary-50-rgb: 254, 254, 254;
-  --color-tertiary-100: rgb(252, 252, 253.2);
-  --bs-tertiary-100-rgb: 252, 252, 253;
-  --color-tertiary-200: rgb(249, 249, 251.4);
-  --bs-tertiary-200-rgb: 249, 249, 251;
-  --color-tertiary-300: rgb(246, 246, 249.6);
-  --bs-tertiary-300-rgb: 246, 246, 250;
-  --color-tertiary-400: rgb(243, 243, 247.8);
-  --bs-tertiary-400-rgb: 243, 243, 248;
-  --color-tertiary-500: #f0f0f6;
-  --bs-tertiary-500-rgb: 237.6, 255, 204.6;
-  --color-tertiary-600: rgb(192, 192, 196.8);
-  --bs-tertiary-600-rgb: 192, 192, 197;
-  --color-tertiary-700: rgb(144, 144, 147.6);
-  --bs-tertiary-700-rgb: 144, 144, 148;
-  --color-tertiary-800: rgb(96, 96, 98.4);
-  --bs-tertiary-800-rgb: 96, 96, 98;
-  --color-tertiary-900: rgb(48, 48, 49.2);
-  --bs-tertiary-900-rgb: 48, 48, 49;
-  --color-tertiary-950: rgb(24, 24, 24.6);
-  --bs-tertiary-950-rgb: 24, 24, 25;
-  --color-quaternary: #f1ffdc;
-  --bs-quaternary-rgb: 241, 255, 220;
-  --color-quaternary-: #f1ffdc;
-  --bs-quaternary--rgb: 241, 255, 220;
-  --color-quaternary-10: rgb(254.58, 255, 253.95);
-  --bs-quaternary-10-rgb: 255, 255, 254;
-  --color-quaternary-25: rgb(254.3, 255, 253.25);
-  --bs-quaternary-25-rgb: 254, 255, 253;
-  --color-quaternary-50: rgb(253.6, 255, 251.5);
-  --bs-quaternary-50-rgb: 254, 255, 252;
-  --color-quaternary-100: rgb(252.2, 255, 248);
-  --bs-quaternary-100-rgb: 252, 255, 248;
-  --color-quaternary-200: rgb(249.4, 255, 241);
-  --bs-quaternary-200-rgb: 249, 255, 241;
-  --color-quaternary-300: rgb(246.6, 255, 234);
-  --bs-quaternary-300-rgb: 247, 255, 234;
-  --color-quaternary-400: rgb(243.8, 255, 227);
-  --bs-quaternary-400-rgb: 244, 255, 227;
-  --color-quaternary-500: #f1ffdc;
-  --bs-quaternary-500-rgb: 241, 255, 220;
-  --color-quaternary-600: rgb(192.8, 204, 176);
-  --bs-quaternary-600-rgb: 193, 204, 176;
-  --color-quaternary-700: rgb(144.6, 153, 132);
-  --bs-quaternary-700-rgb: 145, 153, 132;
-  --color-quaternary-800: rgb(96.4, 102, 88);
-  --bs-quaternary-800-rgb: 96, 102, 88;
-  --color-quaternary-900: rgb(48.2, 51, 44);
-  --bs-quaternary-900-rgb: 48, 51, 44;
-  --color-quaternary-950: rgb(24.1, 25.5, 22);
-  --bs-quaternary-950-rgb: 24, 25, 22;
-  --color-gray: #45454c;
-  --bs-gray-rgb: 69, 69, 76;
-  --color-gray-: #45454c;
-  --bs-gray--rgb: 69, 69, 76;
-  --color-gray-10: rgb(249.42, 249.42, 249.63);
-  --bs-gray-10-rgb: 249, 249, 250;
-  --color-gray-25: rgb(245.7, 245.7, 246.05);
-  --bs-gray-25-rgb: 246, 246, 246;
-  --color-gray-50: rgb(236.4, 236.4, 237.1);
-  --bs-gray-50-rgb: 236, 236, 237;
-  --color-gray-100: rgb(217.8, 217.8, 219.2);
-  --bs-gray-100-rgb: 218, 218, 219;
-  --color-gray-200: rgb(180.6, 180.6, 183.4);
-  --bs-gray-200-rgb: 181, 181, 183;
-  --color-gray-300: rgb(143.4, 143.4, 147.6);
-  --bs-gray-300-rgb: 143, 143, 148;
-  --color-gray-400: rgb(106.2, 106.2, 111.8);
-  --bs-gray-400-rgb: 106, 106, 112;
-  --color-gray-500: #45454c;
-  --bs-gray-500-rgb: 69, 69, 76;
-  --color-gray-600: rgb(55.2, 55.2, 60.8);
-  --bs-gray-600-rgb: 55, 55, 61;
-  --color-gray-700: rgb(41.4, 41.4, 45.6);
-  --bs-gray-700-rgb: 41, 41, 46;
-  --color-gray-800: rgb(27.6, 27.6, 30.4);
-  --bs-gray-800-rgb: 28, 28, 30;
-  --color-gray-900: rgb(13.8, 13.8, 15.2);
-  --bs-gray-900-rgb: 14, 14, 15;
-  --color-gray-950: rgb(6.9, 6.9, 7.6);
-  --bs-gray-950-rgb: 7, 7, 8;
-  --sizes-heading-display-1-size: 8rem;
-  --sizes-heading-display-1-lh: 1;
-  --sizes-heading-display-1-lp: -0.32rem;
-  --sizes-heading-display-2-size: 6rem;
-  --sizes-heading-display-2-lh: 1;
-  --sizes-heading-display-2-lp: -0.24rem;
-  --sizes-heading-display-3-size: 5rem;
-  --sizes-heading-display-3-lh: 1;
-  --sizes-heading-display-3-lp: -0.2rem;
-  --sizes-heading-display-4-size: 4.5rem;
-  --sizes-heading-display-4-lh: 1;
-  --sizes-heading-display-4-lp: -0.18rem;
-  --sizes-heading-display-5-size: 4rem;
-  --sizes-heading-display-5-lh: 1;
-  --sizes-heading-display-5-lp: -0.16rem;
-  --sizes-heading-display-6-size: 3.5rem;
-  --sizes-heading-display-6-lh: 1;
-  --sizes-heading-display-6-lp: -0.14rem;
-  --sizes-heading-h1-size: 3rem;
-  --sizes-heading-h1-lh: 1.1;
-  --sizes-heading-h1-lp: -0.12rem;
-  --sizes-heading-h2-size: 2.5rem;
-  --sizes-heading-h2-lh: 1.1;
-  --sizes-heading-h2-lp: -0.08rem;
-  --sizes-heading-h3-size: 2rem;
-  --sizes-heading-h3-lh: 1.1;
-  --sizes-heading-h3-lp: -0.07rem;
-  --sizes-heading-h4-size: 1.5rem;
-  --sizes-heading-h4-lh: 1.2;
-  --sizes-heading-h4-lp: -0.06rem;
-  --sizes-heading-h5-size: 1.25rem;
-  --sizes-heading-h5-lh: 1.2;
-  --sizes-heading-h5-lp: -0.05rem;
-  --sizes-heading-h6-size: 1rem;
-  --sizes-heading-h6-lh: 1.2;
-  --sizes-heading-h6-lp: -0.004rem;
-  --bs-bg-opacity: 1;
-  --bs-text-opacity: 1;
-  --bs-border-opacity: 1;
-}
+ @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap);
+
+ :root {
+   /* Font Families from Elegant Theme */
+   --font-family-primary: Poppins, sans-serif;
+   --font-family-secondary: "Big Shoulders Display", sans-serif;
+   --font-family-tertiary: Poppins, sans-serif;
+   --font-family-serif: serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+   
+   --radius: 4px;
+   --border-radius: 4px;
+ 
+   /* PRIMARY COLOR SCHEME - Based on Elegant's Main Color (#032421) */
+   --color-primary: #032421;
+   --bs-primary-rgb: 3, 36, 33;
+   --color-primary-: #032421;
+   --bs-primary--rgb: 3, 36, 33;
+   --color-primary-10: #f0f5f4;
+   --bs-primary-10-rgb: 240, 245, 244;
+   --color-primary-25: #e0ebe9;
+   --bs-primary-25-rgb: 224, 235, 233;
+   --color-primary-50: #c1d7d3;
+   --bs-primary-50-rgb: 193, 215, 211;
+   --color-primary-100: #a3c3be;
+   --bs-primary-100-rgb: 163, 195, 190;
+   --color-primary-200: #669f94;
+   --bs-primary-200-rgb: 102, 159, 148;
+   --color-primary-300: #4a7b6a;
+   --bs-primary-300-rgb: 74, 123, 106;
+   --color-primary-400: #2e5740;
+   --bs-primary-400-rgb: 46, 87, 64;
+   --color-primary-500: #032421;
+   --bs-primary-500-rgb: 3, 36, 33;
+   --color-primary-600: #021c1a;
+   --bs-primary-600-rgb: 2, 28, 26;
+   --color-primary-700: #021512;
+   --bs-primary-700-rgb: 2, 21, 18;
+   --color-primary-800: #010e0c;
+   --bs-primary-800-rgb: 1, 14, 12;
+   --color-primary-900: #000706;
+   --bs-primary-900-rgb: 0, 7, 6;
+   --color-primary-950: #000403;
+   --bs-primary-950-rgb: 0, 4, 3;
+ 
+   /* SECONDARY COLOR SCHEME - Based on Elegant's Link Colors (#c93b00) */
+   --color-secondary: #c93b00;
+   --bs-secondary-rgb: 201, 59, 0;
+   --color-secondary-: #c93b00;
+   --bs-secondary--rgb: 201, 59, 0;
+   --color-secondary-10: #fef4f0;
+   --bs-secondary-10-rgb: 254, 244, 240;
+   --color-secondary-25: #fde9e0;
+   --bs-secondary-25-rgb: 253, 233, 224;
+   --color-secondary-50: #fbd3c1;
+   --bs-secondary-50-rgb: 251, 211, 193;
+   --color-secondary-100: #f9bda1;
+   --bs-secondary-100-rgb: 249, 189, 161;
+   --color-secondary-200: #f59062;
+   --bs-secondary-200-rgb: 245, 144, 98;
+   --color-secondary-300: #f16323;
+   --bs-secondary-300-rgb: 241, 99, 35;
+   --color-secondary-400: #e54900;
+   --bs-secondary-400-rgb: 229, 73, 0;
+   --color-secondary-500: #c93b00;
+   --bs-secondary-500-rgb: 201, 59, 0;
+   --color-secondary-600: #a12f00;
+   --bs-secondary-600-rgb: 161, 47, 0;
+   --color-secondary-700: #792300;
+   --bs-secondary-700-rgb: 121, 35, 0;
+   --color-secondary-800: #511700;
+   --bs-secondary-800-rgb: 81, 23, 0;
+   --color-secondary-900: #290c00;
+   --bs-secondary-900-rgb: 41, 12, 0;
+   --color-secondary-950: #140600;
+   --bs-secondary-950-rgb: 20, 6, 0;
+ 
+   /* TERTIARY COLOR SCHEME - Based on Elegant's Light Color (#efedea) */
+   --color-tertiary: #efedea;
+   --bs-tertiary-rgb: 239, 237, 234;
+   --color-tertiary-: #efedea;
+   --bs-tertiary--rgb: 239, 237, 234;
+   --color-tertiary-10: #fefefe;
+   --bs-tertiary-10-rgb: 254, 254, 254;
+   --color-tertiary-25: #fdfdfd;
+   --bs-tertiary-25-rgb: 253, 253, 253;
+   --color-tertiary-50: #fbfbfa;
+   --bs-tertiary-50-rgb: 251, 251, 250;
+   --color-tertiary-100: #f7f6f5;
+   --bs-tertiary-100-rgb: 247, 246, 245;
+   --color-tertiary-200: #efedea;
+   --bs-tertiary-200-rgb: 239, 237, 234;
+   --color-tertiary-300: #e7e4e0;
+   --bs-tertiary-300-rgb: 231, 228, 224;
+   --color-tertiary-400: #dfdbd5;
+   --bs-tertiary-400-rgb: 223, 219, 213;
+   --color-tertiary-500: #d7d2cb;
+   --bs-tertiary-500-rgb: 215, 210, 203;
+   --color-tertiary-600: #aca8a2;
+   --bs-tertiary-600-rgb: 172, 168, 162;
+   --color-tertiary-700: #817e7a;
+   --bs-tertiary-700-rgb: 129, 126, 122;
+   --color-tertiary-800: #565451;
+   --bs-tertiary-800-rgb: 86, 84, 81;
+   --color-tertiary-900: #2b2a29;
+   --bs-tertiary-900-rgb: 43, 42, 41;
+   --color-tertiary-950: #161514;
+   --bs-tertiary-950-rgb: 22, 21, 20;
+ 
+   /* QUATERNARY COLOR SCHEME - Based on Elegant's Sub Menu Link Color (#bbb9b2) */
+   --color-quaternary: #bbb9b2;
+   --bs-quaternary-rgb: 187, 185, 178;
+   --color-quaternary-: #bbb9b2;
+   --bs-quaternary--rgb: 187, 185, 178;
+   --color-quaternary-10: #fcfcfb;
+   --bs-quaternary-10-rgb: 252, 252, 251;
+   --color-quaternary-25: #f9f9f8;
+   --bs-quaternary-25-rgb: 249, 249, 248;
+   --color-quaternary-50: #f3f3f1;
+   --bs-quaternary-50-rgb: 243, 243, 241;
+   --color-quaternary-100: #edede9;
+   --bs-quaternary-100-rgb: 237, 237, 233;
+   --color-quaternary-200: #ddddd6;
+   --bs-quaternary-200-rgb: 221, 221, 214;
+   --color-quaternary-300: #cdcdc4;
+   --bs-quaternary-300-rgb: 205, 205, 196;
+   --color-quaternary-400: #bbb9b2;
+   --bs-quaternary-400-rgb: 187, 185, 178;
+   --color-quaternary-500: #a9a79f;
+   --bs-quaternary-500-rgb: 169, 167, 159;
+   --color-quaternary-600: #87857f;
+   --bs-quaternary-600-rgb: 135, 133, 127;
+   --color-quaternary-700: #65635f;
+   --bs-quaternary-700-rgb: 101, 99, 95;
+   --color-quaternary-800: #43423f;
+   --bs-quaternary-800-rgb: 67, 66, 63;
+   --color-quaternary-900: #22211f;
+   --bs-quaternary-900-rgb: 34, 33, 31;
+   --color-quaternary-950: #111110;
+   --bs-quaternary-950-rgb: 17, 17, 16;
+ 
+   /* GRAY COLOR SCHEME - Based on Elegant's Dark & Background Colors */
+   --color-gray: #121212;
+   --bs-gray-rgb: 18, 18, 18;
+   --color-gray-: #121212;
+   --bs-gray--rgb: 18, 18, 18;
+   --color-gray-10: #f3f3f3;
+   --bs-gray-10-rgb: 243, 243, 243;
+   --color-gray-25: #e8e8e8;
+   --bs-gray-25-rgb: 232, 232, 232;
+   --color-gray-50: #d1d1d1;
+   --bs-gray-50-rgb: 209, 209, 209;
+   --color-gray-100: #b9b9b9;
+   --bs-gray-100-rgb: 185, 185, 185;
+   --color-gray-200: #8f8f8f;
+   --bs-gray-200-rgb: 143, 143, 143;
+   --color-gray-300: #666666;
+   --bs-gray-300-rgb: 102, 102, 102;
+   --color-gray-400: #3d3d3d;
+   --bs-gray-400-rgb: 61, 61, 61;
+   --color-gray-500: #252525;
+   --bs-gray-500-rgb: 37, 37, 37;
+   --color-gray-600: #1a1a1a;
+   --bs-gray-600-rgb: 26, 26, 26;
+   --color-gray-700: #161616;
+   --bs-gray-700-rgb: 22, 22, 22;
+   --color-gray-800: #121212;
+   --bs-gray-800-rgb: 18, 18, 18;
+   --color-gray-900: #0a0a0a;
+   --bs-gray-900-rgb: 10, 10, 10;
+   --color-gray-950: #050505;
+   --bs-gray-950-rgb: 5, 5, 5;
+ 
+   /* ELEGANT THEME SPECIFIC COLORS */
+   --tt-main-color: #032421; /* rgb(3, 36, 33) */
+   --tt-dark-color: #121212; /* rgb(18, 18, 18) */
+   --tt-light-color: #efedea; /* rgb(239, 237, 234) */
+   --tt-bg-color: #0a0a0a; /* rgb(10, 10, 10) */
+   --tt-text-color: #efedea; /* rgb(239, 237, 234) */
+   --tt-text-muted-color: #8f8f8f; /* rgb(143, 143, 143) */
+   --tt-border-color: rgba(133, 133, 133, 0.5); /* rgb(133, 133, 133) with 50% opacity */
+   --tt-linear-text-bg-color: rgba(255, 255, 255, 0.2); /* rgb(255, 255, 255) with 20% opacity */
+   --tt-page-trans-overlay-bg-color: #161616; /* rgb(22, 22, 22) */
+   --tt-ball-border-color: #666666; /* rgb(102, 102, 102) */
+   --tt-ball-magnetic-color: var(--tt-main-color);
+   --tt-ball-bg-color: rgba(3, 36, 33, 0.93); /* Main color with 93% opacity */
+   --tt-ball-color: #ffffff; /* rgb(255, 255, 255) */
+   --tt-link-color: #c93b00; /* rgb(201, 59, 0) */
+   --tt-link-hover-color: #f5533a; /* rgb(245, 83, 58) */
+   --tt-sub-menu-bg-color: #252525; /* rgb(37, 37, 37) */
+   --tt-sub-menu-link-color: #bbb9b2; /* rgb(187, 185, 178) */
+   --tt-sub-menu-link-hover-color: #ffffff; /* rgb(255, 255, 255) */
+   --tt-force-to-light-color: #f3f3f3; /* rgb(243, 243, 243) */
+ 
+   /* Typography sizing */
+   --sizes-heading-display-1-size: 8rem;
+   --sizes-heading-display-1-lh: 1;
+   --sizes-heading-display-1-lp: -0.32rem;
+   --sizes-heading-display-2-size: 6rem;
+   --sizes-heading-display-2-lh: 1;
+   --sizes-heading-display-2-lp: -0.24rem;
+   --sizes-heading-display-3-size: 5rem;
+   --sizes-heading-display-3-lh: 1;
+   --sizes-heading-display-3-lp: -0.2rem;
+   --sizes-heading-display-4-size: 4.5rem;
+   --sizes-heading-display-4-lh: 1;
+   --sizes-heading-display-4-lp: -0.18rem;
+   --sizes-heading-display-5-size: 4rem;
+   --sizes-heading-display-5-lh: 1;
+   --sizes-heading-display-5-lp: -0.16rem;
+   --sizes-heading-display-6-size: 3.5rem;
+   --sizes-heading-display-6-lh: 1;
+   --sizes-heading-display-6-lp: -0.14rem;
+   --sizes-heading-h1-size: 3rem;
+   --sizes-heading-h1-lh: 1.1;
+   --sizes-heading-h1-lp: -0.12rem;
+   --sizes-heading-h2-size: 2.5rem;
+   --sizes-heading-h2-lh: 1.1;
+   --sizes-heading-h2-lp: -0.08rem;
+   --sizes-heading-h3-size: 2rem;
+   --sizes-heading-h3-lh: 1.1;
+   --sizes-heading-h3-lp: -0.07rem;
+   --sizes-heading-h4-size: 1.5rem;
+   --sizes-heading-h4-lh: 1.2;
+   --sizes-heading-h4-lp: -0.06rem;
+   --sizes-heading-h5-size: 1.25rem;
+   --sizes-heading-h5-lh: 1.2;
+   --sizes-heading-h5-lp: -0.05rem;
+   --sizes-heading-h6-size: 1rem;
+   --sizes-heading-h6-lh: 1.2;
+   --sizes-heading-h6-lp: -0.004rem;
+ 
+   --bs-bg-opacity: 1;
+   --bs-text-opacity: 1;
+   --bs-border-opacity: 1;
+ }
 .from-primary {
   --uc-gradient-from: #39851d;
   --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to);
 }
 .to-primary-25 {
   --uc-gradient-to: rgb(246.2, 245.75, 253.7);
-}
+} 
 .to-primary-100 {
   --uc-gradient-to: rgb(219.8, 218, 249.8);
 }
