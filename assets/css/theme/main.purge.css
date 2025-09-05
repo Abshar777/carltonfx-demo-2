@@ -4538,7 +4538,8 @@ progress {
   }
 }
 .btn:hover {
-  color: #000000 !important;
+  color: black !important;
+  --uc-gradient-from: transprent;
   background-color: #00ec4b !important;
   border-color: var(--bs-btn-hover-border-color);
 }
