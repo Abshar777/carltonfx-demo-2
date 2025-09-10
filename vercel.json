@@ -6,7 +6,15 @@
       { "source": "/contact", "destination": "/contact.html" },
       { "source": "/forex", "destination": "/forex.html" },
       { "source": "/metals", "destination": "/metals.html" },
-      { "source": "/stock-indices", "destination": "/stock-indices.html" }
+      { "source": "/stock-indices", "destination": "/stock-indices.html" },
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/PriceFeedDiscrepancyPolicy", "destination": "/PriceFeedDiscrepancyPolicy.html" },
+      { "source": "/RiskDisclosureStatement", "destination": "/RiskDisclosureStatement.html" },
+      { "source": "/scalpingpolicy", "destination": "/scalpingpolicy.html" },
+      { "source": "/aml-kyc", "destination": "/aml-kyc.html" },
+      { "source": "/legel-documents", "destination": "/legel-documents.html" }
+
+
     ],
     "redirects": [
       { "source": "/:path*.html", "destination": "/:path*", "permanent": true }
