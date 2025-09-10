@@ -1,4 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM+Plex+Sans+Arabic:wght@400;700&amp;display=swap);
+
+@keyframes rotate3dAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+.drotateAnimation {
+  animation: rotate3dAnimation 15s linear infinite;
+}
+
 :root {
   --font-family-primary: "Sunsive", "IBM Plex Sans Arabic", sans-serif;
   --font-family-secondary: "Sunsive", "IBM Plex Sans Arabic", serif;
