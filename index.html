@@ -987,14 +987,23 @@ class="uni-body tt-transition tt-smooth-scroll panel uni-body panel bg-tertiary-
                           class="panel overflow-hidden rounded-1-5 lg:rounded-2"
                         >
                           <figure
-                            class="featured-image m-0 rounded ratio ratio-1x1 rounded-2 overflow-hidden"
+                          style="position: relative; display: flex; justify-content: center; align-items: center;"
+                            class="featured-image animate-float m-0 rounded relative  ratio ratio-1x1 rounded-2 overflow-hidden"
                           >
                             <img
-                              class="media-cover image"
+                              class="media-cover image "
                               src="./assets/our/why1.png"
                               alt="Instant Messaging"
-                              style="scale:.7"
+                              style="scale:.7; position: relative; z-index: 1;"
                             />
+                            <div style="width: 50%; height: 50%; 
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                z-index: 0;
+                                border-radius: 50%;
+                                filter: blur(4rem);
+                                left: 50%;
+                                background-color: #115a3580;" class="absolute "></div>
                           </figure>
                         </div>
                       </div>
@@ -1055,13 +1064,23 @@ class="uni-body tt-transition tt-smooth-scroll panel uni-body panel bg-tertiary-
                           class="panel overflow-hidden rounded-1-5 lg:rounded-2"
                         >
                           <figure
-                            class="featured-image m-0 rounded ratio ratio-1x1 rounded-2 overflow-hidden"
+                          style="position: relative; display: flex; justify-content: center; align-items: center;"
+                            class="featured-image m-0 animate-float2 rounded ratio ratio-1x1 rounded-2 overflow-hidden"
                           >
                             <img
                               class="media-cover image"
-                              src="./assets/our/22.jpg"
+                              style=" position: relative; z-index: 1;scale:.8;"
+                              src="./assets/svgs/image.png"
                               alt="HD Video Calling"
                             />
+                            <div style="width: 50%; height: 50%; 
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 0;
+                            border-radius: 50%;
+                            filter: blur(4rem);
+                            left: 50%;
+                            background-color: #115a3580;" class="absolute "></div>
                           </figure>
                         </div>
                       </div>
