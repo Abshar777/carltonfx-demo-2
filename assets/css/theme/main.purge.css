@@ -30,6 +30,23 @@
     transform: translateY(0) translateX(0) scale(1);
   }
 }
+@keyframes scaleAnimation {
+  0%,
+  100% {
+    
+    transform: scale(.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.animate-scale {
+  animation: scaleAnimation 5s infinite ease-in-out;
+}
+
+
+
 .animate-float {
   animation: float 5s infinite ease-in-out;
 }
