@@ -695,7 +695,7 @@ class="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white px-1 lg:
                         placeholder="Your message.."
                         required
                       ></textarea>
-                      <button class="btn btn-primary btn-md text-black mt-2" type="submit">
+                      <button id="submitButton" class="btn btn-primary btn-md text-black mt-2" type="submit">
                         Send message
                       </button>
                     </form>
@@ -705,34 +705,36 @@ class="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white px-1 lg:
                         .getElementById("contactForm")
                         .addEventListener("submit", async function (e) {
                           e.preventDefault();
-                    
+                         const submitButton = document.getElementById("submitButton");
+                         submitButton.disabled = true;
+                         submitButton.innerHTML = "Sending...";
+                          const url =
+    "https://script.google.com/macros/s/AKfycbziASsev-Pe5Lujsvg816-d2yVt4D40c4KJfEgR6S4VOT3l-7spaBB_wLP0IRhnIL-T5Q/exec";
+
                           const formData = {
-                            name: this.name.value,
-                            email: this.email.value,
-                            subject: this.subject.value,
-                            message: this.message.value,
+                            Name: this.name.value,
+                            Email: this.email.value,
+                            Subject: this.subject.value,
+                            Message: this.message.value,
                           };
                     
                           try {
-                            const response = await fetch("http://localhost:3000/api/contact", {
+                           await fetch(url, {
                               method: "POST",
-                              headers: {
-                                "Content-Type": "application/json",
-                              },
                               body: JSON.stringify(formData),
                             });
                     
-                            const data = await response.json();
-                    
-                            if (data.success) {
-                              alert("✅ Form submitted! WhatsApp notification sent.");
+                           
+                            alert("✅ Form submitted! Contact form submitted successfully and WhatsApp Message sent Automatically Also You Will Get a Reply From Our Team Soon.");
+                            window.location.href = `https://api.whatsapp.com/send?phone=447360541421&text=Hi my i am ${this.name.value} ,this is my email ${this.email.value} and this is my subject ${this.subject.value} and my message is${this.message.value}`;
                               this.reset();
-                            } else {
-                              alert("❌ Failed: " + (data.error || "Unknown error"));
-                            }
+                            
                           } catch (err) {
                             console.error("Error:", err);
                             alert("❌ Something went wrong. Try again later.");
+                          } finally {
+                            submitButton.disabled = false;
+                            submitButton.innerHTML = "Send message";
                           }
                         });
                     </script>
