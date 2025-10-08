@@ -147,16 +147,16 @@
   ascent-override: 100%;
 }
 @font-face {
-  font-family: Lexend;
-  src: local("Lexend Regular"), url("../fonts/lexend/Lexend-Regular.ttf");
+  font-family:  ;
+  src: local("  Regular"), url("../fonts/ / -Regular.ttf");
   font-weight: 400;
   text-rendering: optimizeLegibility;
   font-display: swap;
   ascent-override: 100%;
 }
 @font-face {
-  font-family: Lexend;
-  src: local("Lexend SemiBold"), url("../fonts/lexend/Lexend-SemiBold.ttf");
+  font-family:  ;
+  src: local("  SemiBold"), url("../fonts/ / -SemiBold.ttf");
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-display: swap;

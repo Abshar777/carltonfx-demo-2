@@ -1,0 +1,15 @@
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect .html URLs to clean ones (SEO-friendly)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L,NC]
+
+# Allow accessing .html files without typing the extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Optional: Handle root
+DirectoryIndex index.html
