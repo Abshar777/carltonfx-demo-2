@@ -46,6 +46,15 @@
 }
 
 
+video{
+  transform: none !important;
+  will-change: none  !important; 
+  /* contain: strict; */
+  backface-visibility: hidden  !important; 
+  -webkit-transform: none !important; 
+  -webkit-backface-visibility: hidden  !important; 
+}
+
 
 .animate-float {
   animation: float 5s infinite ease-in-out;
